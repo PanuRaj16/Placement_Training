@@ -170,7 +170,7 @@ public :
     return 0;
 }*/
 
-int main()
+/*int main()
 {
     vector<string> token = {"2","1","+","3","*"};
     stack<int> st;
@@ -196,4 +196,25 @@ int main()
     }
     cout<<st.top();
     return 0;
-}
+}*/
+
+/*int main()
+{
+    stack<int> st,mn;
+    void push(int val){
+        st.push(val);
+        if(mn.empty() || val <= mn.top)
+            mn.push(val);
+    }
+    void pop()
+    {
+        st.pop();
+        if(st.top() == mn.top())
+            mn.pop();
+    }
+
+    int getTop()
+        return st.top();
+    int getMin()
+        return mn.top();
+}*/
